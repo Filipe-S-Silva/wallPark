@@ -10,6 +10,7 @@
 }
 
 body {
+    height: 100vh;
     background: var(--verdeClaro);
     height: 100vh;
     display: flex;

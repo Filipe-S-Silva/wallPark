@@ -3,7 +3,7 @@ function btnEnviar() {
     senha = document.getElementById('senha').value
     
     if (email == "Filipe" && senha == "123") {
-        window.location.href = "html/infoVeiculos.html";
+        window.location.href = "html/cadastrar.html";
     } else {
         document.getElementById('email').value = "";
         document.getElementById('senha').value = "";
