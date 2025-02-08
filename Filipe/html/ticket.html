@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WallPark-Ticekt</title>
+    <link rel="stylesheet" href="../css/styleTicket.css" />
+    <link rel="stylesheet" href="../css/styleTelas.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <ul>
+          <li>
+            <a href="cadastrar.html" id="cadastroVeiculoHeader"
+              ><span class="off">CADASTRO DE VEÍCULO</span></a
+            >
+          </li>
+
+          <li>
+            <a href="vagas.html" id="vagasHeader"
+              ><span class="off">VAGAS</span></a
+            >
+          </li>
+
+          <li>
+            <a href="editar.html" id="editarHeader"
+              ><span class="off">EDITAR</span></a
+            >
+          </li>
+
+          <li>
+            <a href="ticket.html" id="ticketHeader" class="aOn"
+              ><span class="on">TICKET</span></a
+            >
+          </li>
+
+          <li>
+            <a href="tabelaPreco.html" id="tabelaPrecoHeader"
+              ><span class="off">TABELA DE PREÇO</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>TICKET DE RESERVA</h1>
+
+    <div class="boxMaior">
+
+      <div class="boxMedia">
+
+        <div class="info" id="infoData">
+          <span class="span">DATA: </span>
+
+          <div class="dataBox">
+            <span id="spanData">XX</span>
+            <span>/</span>
+            <span id="spanMes">XX</span>
+            <span>/</span>
+            <span id="spanAno">XXXX</span>
+          </div>
+
+        </div>
+
+        <div class="info" id="infoVeiculo">
+          <span class="span">VEÍCULO: </span>
+          <span id="spanVeiculo">XXXXX</span>
+        </div>
+
+        <div class="info" id="infoPlaca">
+          <span class="span">PLACA: </span>
+          <span id="spanPlaca">XXXXX</span>
+        </div>
+
+        <div class="info" id="infoEntrada">
+          <span class="span">ENTRADA: </span>
+
+          <div class="entradaBox">
+            <span id="spanHoraEntrada">XX</span>
+            <span>:</span>
+            <span id="spanMinutoEntrada">XX</span>
+            <span>:</span>
+            <span id="spanSegundoEntrada">XX</span>
+          </div>
+
+        </div>
+
+        <div class="info" id="infoSaida">
+          <span class="span">SAÍDA: </span>
+
+          <div class="saidaBox">
+            <span id="spanHoraSaida">XX</span>
+            <span>:</span>
+            <span id="spanMinutoSaida">XX</span>
+            <span>:</span>
+            <span id="spanSegundoSaida">XX</span>
+          </div>
+
+        </div>
+
+        <div class="info" id="infoValor">
+          <span class="span">VALOR R$: </span>
+          <span id="spanValorPagar">XX.XX</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="../js/scriptTicket.js"></script>
+    <script src="../js/scriptTelas.js"></script>
+  </body>
+</html>

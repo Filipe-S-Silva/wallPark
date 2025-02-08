@@ -1,0 +1,105 @@
+:root{
+    --verde: #034833;
+    --verdeClaro: #F1F5EB; 
+    --verdeLimao: #83CD20;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--verde);
+     user-select: none;
+
+}
+
+body {
+    height: 100vh;
+    background: var(--verdeClaro);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 48px;
+
+}
+
+.pageLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 477px;
+    width: 523px;
+    background: white;    
+    border-radius: 50px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.409);
+    gap: 15px;
+}
+
+.pageLogin .text {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.pageLogin .boxEmail, .pageLogin .boxSenha{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 458px;
+}
+
+.pageLogin .inputText{
+    padding-left: 12px;
+    font-size: 16px;
+    
+}
+
+.pageLogin .boxEmail input, .pageLogin .boxSenha input{
+    width: 457px;
+    height: 51px;
+    font-size: 16px;
+    padding-left: 16px;
+    border-radius: 60px;
+    border: 1.5px solid #E3DBD8;
+    transition: .5s;
+}
+
+.pageLogin .boxEmail input:hover, .pageLogin .boxSenha input:hover{
+    border: 1.5px solid #c2b9b6;
+    transition: .3s;
+}
+
+.pageLogin .boxEmail input::placeholder, .pageLogin .boxSenha input::placeholder{
+    color: var(--verde);
+    filter: opacity(60%);
+    transition: .3s;
+
+}
+
+.pageLogin .boxEmail input:hover::placeholder, .pageLogin .boxSenha input:hover::placeholder{
+    filter: opacity(80%);
+    transition: .3s;
+}
+
+.pageLogin #btn{
+    background: var(--verdeLimao);
+    width: 137px;
+    height: 36px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.pageLogin #btn:hover{
+    background: #68a31b;
+    cursor: pointer;
+    transition: .3s;
+}

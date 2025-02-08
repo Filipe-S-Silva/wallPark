@@ -1,0 +1,80 @@
+.infoVeiculo {
+  width: 785px;
+  height: 540px;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.infoVeiculo .divisao {
+  width: 698px;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.infoVeiculo .modeloVeiculo {
+   flex-direction: column;
+}
+
+.infoVeiculo .modeloVeiculo span, .infoVeiculo .divisao .porteVeiculo span,
+.infoVeiculo .divisao .placaVeiculo span,
+.infoVeiculo .divisao .corVeiculo span {
+  font-size: 16px;
+  padding-left: 17px;
+}
+
+.infoVeiculo .divisao .placaVeiculo, .infoVeiculo .divisao .porteVeiculo, .infoVeiculo .divisao .modeloVeiculo, .infoVeiculo .divisao .corVeiculo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.infoVeiculo .modeloVeiculo input, .infoVeiculo .porteVeiculo input, .infoVeiculo .divisao .placaVeiculo input, .infoVeiculo .divisao .corVeiculo input {
+  height: 70px;
+  font-size: 16px;
+  padding-left: 16px;
+  border-radius: 60px;
+  border: 1.5px solid #e3dbd8;
+  transition: 0.5s;
+  width: 330px;
+}
+
+.infoVeiculo .modeloVeiculo input:hover, .infoVeiculo .divisao .porteVeiculo input:hover,.infoVeiculo .divisao .placaVeiculo input:hover, .infoVeiculo .divisao .corVeiculo input:hover{
+  border: 1.5px solid #c2b9b6;
+  transition: .3s;
+}
+
+.infoVeiculo .modeloVeiculo input::placeholder, .infoVeiculo .porteVeiculo input::placeholder,.infoVeiculo .divisao .placaVeiculo input::placeholder, .infoVeiculo .divisao .corVeiculo input::placeholder{
+  color: var(--verde);
+  filter: opacity(60%);
+  transition: .3s;
+}
+
+.infoVeiculo .modeloVeiculo input:hover::placeholder,.infoVeiculo .porteVeiculo input:hover::placeholder,.infoVeiculo .divisao .placaVeiculo input:hover::placeholder, .infoVeiculo .divisao .corVeiculo input:hover::placeholder{
+  filter: opacity(80%);
+  transition: .3s;
+}
+
+.infoVeiculo button{
+  background: var(--verdeLimao);
+  width: 210px;
+  height: 55px;
+  border: none;
+  border-radius: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  transition: .3s;
+  
+}
+
+.infoVeiculo button:hover{
+  filter: brightness(.8);
+  cursor: pointer;
+  transition: .3s;
+}

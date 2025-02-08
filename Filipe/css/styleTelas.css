@@ -1,0 +1,101 @@
+:root {
+  --verde: #034833;
+  --verdeClaro: #f1f5eb;
+  --verdeLimao: #83cd20;
+  --headerSelecionado: #009f6f;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--verde);
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  background: var(--verdeClaro);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; 
+  overflow: hidden;
+}
+
+body.loaded{
+  opacity: 1;
+}
+
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 1.5%;
+  transition: 0.3s;
+}
+
+body header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 4.3%;
+  list-style-type: none;
+  transition: 0.3s;
+}
+
+body header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body header nav ul li a.aOn {
+  pointer-events: none;  
+
+}
+
+header nav ul li a::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background: var(--headerSelecionado);
+  position: absolute;
+  bottom: -3px;
+  left: -4%;
+  transition: 0.5s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+  filter: brightness(50%);
+  width: 110%;
+  transition: 0.2s;
+}
+
+body header nav ul .on {
+  color: var(--headerSelecionado);
+  transition: 0.3s;
+}
+
+body header nav ul .on:hover,
+body header nav ul .off:hover {
+  filter: brightness(80%);
+  transition: 0.3s;
+}
+
+body header nav ul .off {
+  color: var(--verde);
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}

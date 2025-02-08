@@ -1,0 +1,42 @@
+.boxMaior{
+    background: white;
+    width: 864px;
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.boxMaior .boxMedia{
+    height: fit-content;
+    width: 585px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;    
+    flex-direction: column; 
+}
+
+.boxMaior .boxMedia .info{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid black;
+    font-size: 32px;
+}
+
+.boxMaior .boxMedia .info span{
+    color: black;
+}
+
+.boxMaior .boxMedia .info .span{
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.boxMaior .boxMedia .info#infoValor{
+    border-bottom: none;
+}
